@@ -1,2 +1,0 @@
-# biobucs
-biobucs website project
