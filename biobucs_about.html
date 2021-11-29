@@ -4,9 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
 </head>
-<body>
+<style>
+    :root {
+        --font: Georgia, TeX Gyre Adventor, URW Gothic L, Sans-serif;
+        --green: #007f46;
+        --green_blur: rgb(0, 127, 70, 0.5);
+        --white: white;
+        --brown: #7f675b;
+        --font-center: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #navi {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        text-align: center;
+        font-family: var(--font);
+        padding-bottom: 2%;
+        padding-top: 2%;
+        top: 0;
+        background-color: rgb(112,128,144,0.5);
+        border-bottom: solid;
+        border-color:var(--green_blur);
+        border-width: 20px;
+    }
+
+
+    li {
+        display: inline;
+    }
     
+    li a {
+        color:var(--white);
+        text-decoration-color: rgb(112,128,144,0.1);
+        padding: 20px 80px;
+        transition: 0.5s;
+        border-right: solid;
+        border-left: solid;
+    }
+
+    li a:hover {
+        text-decoration-color:var(--green);
+    }
+
+    a {
+        transition: 0.5s;
+        color:var(--white);
+        text-decoration-color: var(--brown);
+    }
+
+    a:hover {
+        text-decoration-color:var(--white);
+    }
+    
+
+    body { 
+        background-color: var(--brown);
+    }
+
+    #main {
+        background-color:var(--white);
+        color:var(--brown);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 100px;
+        font-size: 50px;  
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 50px;   
+        font-family: var(--font);    
+        text-align: center;
+    }
+
+    #maintext {
+        font-size: 20px;
+        font-family:var(--font);
+        font-style: normal;
+    }
+
+    #title {
+        text-align: center;
+        font-family: var(--font-center);
+        color:var(--brown)
+    }
+
+</style>
+<body>
+
+    <div style="background-image: url('leaves.png'); background-repeat: no-repeat; background-size: 100%;">
+        <ul id="navi">
+            <li><a href="http://127.0.0.1:5500/biobucs_mainpage.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_current.html">CURRENT PROJECTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_about.html">ABOUT</a></li>
+        </ul>
+
+    <p id="main"> <b id="title"> Our Mission </b> <br><br>
+            <i id="maintext"> </i>  
+
+    </div>
+
 </body>
 </html>
