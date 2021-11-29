@@ -1,12 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/8d186f6378.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="biobucs.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Current Projects</title>
 </head>
-<body>
+<style>
+    :root {
+        --font: Georgia, TeX Gyre Adventor, URW Gothic L, Sans-serif;
+        --green: #007f46;
+        --green_blur: rgb(0, 127, 70, 0.5);
+        --white: white;
+        --brown: #7f675b;
+        --font-center: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #navi {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        text-align: center;
+        font-family: var(--font);
+        padding-bottom: 2%;
+        padding-top: 2%;
+        top: 0;
+        background-color: rgb(112,128,144,0.5);
+        border-bottom: solid;
+        border-color:var(--green_blur);
+        border-width: 20px;
+    }
+
+    li {
+        display: inline;
+    }
     
+    li a {
+        color:var(--white);
+        text-decoration-color: rgb(112,128,144,0.1);
+        padding: 20px 80px;
+        transition: 0.5s;
+        border-right: solid;
+        border-left: solid;
+    }
+
+    li a:hover {
+        text-decoration-color:var(--green);
+    }
+
+    a {
+        transition: 0.5s;
+        color:var(--white);
+        text-decoration-color: var(--brown);
+    }
+
+    a:hover {
+        text-decoration-color:var(--white);
+    }
+    
+
+    body { 
+        background-color:  #7f675b;
+    }
+
+    @keyframes logo {
+        from {opacity: 0.5; transform: scale(0.9);}
+        to {opacity: 1; transform: scale(1);}
+    }
+
+    h5 {
+        border-bottom-style: solid;
+        border-color:var(--white);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-family: var(--font);
+        color:var(--green);
+        text-align: center;
+        font-size: 70px;
+        margin-top: 100px;
+        margin-right: 35%;
+        margin-left: 35%;       
+        background-color:var(--white);
+        border-radius: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: solid;
+        border-width: 5px;
+        border-color:var(--green);
+        animation-name: header;
+        animation-duration: 1s;
+    }
+
+    @keyframes header {
+        from {opacity: 0.5; transform: scale(0.9);}
+        to {opacity: 1; transform: scale(1);}
+    }
+
+    #main {
+        background-color:var(--white);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 400px;
+        font-size: 50px;  
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 50px;   
+        font-family: var(--font);    
+    }
+
+    #title {
+        text-align: center;
+        font-family: var(--font-center);
+        color:var(--brown)
+    }
+
+    #quote {
+        font-family:var(--font);
+        font-size: 20px;
+        color:black;
+        font-style: italic;
+    }
+
+    #quoteimg {
+        color:var(--brown);
+    }
+
+    #maintext {
+        font-size: 20px;
+        font-family:var(--font);
+        font-style: normal;
+    }
+
+    #awards {
+        padding-left: 100px;
+        font-size: 20px;
+    }
+
+    footer {
+        background-color: #7f675b;
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    #circle {
+        width: 300px;
+        margin-top: 40px;
+        margin-left: 200px;
+        border-right: solid;
+        border-color: var(--white);
+        padding-right: 50px;
+    }
+
+    #contact {
+        float: right;
+        margin-top: 50px;
+        margin-right: 800px;
+        font-family:var(--font-center);
+        color:var(--white);
+        font-size: 20px;
+    }
+
+    #ort {
+        float: right;
+        margin-top: -230px;
+        margin-right: 517px;
+        font-family:var(--font-center);
+        color:var(--white);
+        font-size: 20px;
+    }
+
+    h5 {
+        border-bottom-style: solid;
+        border-color:var(--white);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 100px;
+    }
+
+    .fab fa-instagram {
+        color:var(--green);
+    }
+
+    #instagram {
+        color:var(--green);
+        transition: 0.5s;
+        margin-left: 200px;
+    }
+
+    #instagram:hover {
+        color:var(--white);
+        transform: scale(1.1);
+    }
+
+    #creator {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    #quote {
+        font-family:var(--font);
+        font-size: 20px;
+        color:black;
+        font-style: italic;
+    }
+
+    #quoteimg {
+        color:var(--brown);
+    }
+
+    #title2 {
+        font-weight: bold;
+        font-style: normal;
+    }
+
+</style>
+<body>
+
+
+    <div style="background-image: url('pollution.png'); background-repeat: no-repeat; background-size: 100%;">
+        <ul id="navi">
+            <li><a href="http://127.0.0.1:5500/biobucs_mainpage.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_current.html">CURRENT PROJECTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_about.html">ABOUT</a></li>
+        </ul>
+        <h1> Current Projects </h1>
+
+        <p id="main"> <b id="title"> Ongoing Intiatives </b> <br><br>
+            <d id="quote"> <i id="quoteimg" class="fas fa-quote-left"></i> Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it is the only thing that ever has.
+                <i id="quoteimg" class="fas fa-quote-right"></i><br> — Margaret Mead</span></d>
+                    <br><br> <i id="maintext"> <i id="title2"> Air Pollution Project </i> <br>
+                        <i id="creator"> By Shayann Essani  </i> </i>
+                        <br><br>
+    </div>
+
+    <footer> 
+        
+        <img id="circle" src="biobucscircle.png">
+        <p id="contact"> Contacts </p>
+        <p id="ort"> HHS STEM Program Director: <a href="mailto: jort@hoover.k12.al.us;"> Janet Ort </a></p>
+
+        <h5> </h5>
+        
+        <p><span id="instagram" style="display: inline-block;" 
+            class="fab fa-instagram-square fa-5x" aria-hidden="true" onclick="insta()"></span> </p>
+
+    <script>
+        function insta() {
+            window.open('https://www.instagram.com/hhsbiobucs/');
+        }
+
+    </script>
+    </footer>
+
 </body>
 </html>
