@@ -21,7 +21,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        font-size: 25px;
+        font-size: 1.5vw;
         text-align: center;
         font-family: var(--font);
         padding-bottom: 2%;
@@ -29,9 +29,9 @@
         border-bottom: solid;
         border-color:#80c83a;
         border-width: 20px;
-        position: sticky;
         top: 0;
         background-color: var(--green);
+        position: sticky;
     }
 
     li {
@@ -41,7 +41,7 @@
     li a {
         color:var(--white);
         text-decoration-color: var(--green);
-        padding: 20px 80px;
+        padding: 1% 5%;
         transition: 0.5s;
         border-right: solid;
         border-left: solid;
@@ -74,7 +74,8 @@
 
     .circle {
         background-color:white;
-        width: 35%;
+        width: 35vw;
+        height: 35vw;
         border-radius: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -102,31 +103,33 @@
     }
 
     h2 {
-        font-size: 500%;
-        padding-top: 30px;
+        font-size: 5vw;
+        padding-top: 5%;
         font-weight: bold;
     }
 
     h3 {
-        font-size: 200%;
-        padding-top: 20px;
+        font-size: 2vw;
+        padding-top: 5%;
         font-weight: none;
     }
     
     #leaf {
         width: 30%;
-        padding-top: 50px;
+        padding-top: 10%;
     }
 
     #description {
-        font-size: 150%;
+        font-size: 1.5vw;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 50px 200px; 
+        padding: 5% 15%; 
         color:var(--white);
         word-spacing: 10px;
-        float: left;
         font-weight:bold;
         line-height: 2;
+        background-color:var(--green);
+        margin-left: 100px;
+        margin-right: 100px;
 
     }
 
@@ -150,44 +153,47 @@
         border-bottom-style: solid;
         border-color:var(--white);
         border-width: 5px;
-        margin-left: 600px;
-        margin-right: 600px;
-        margin-top: 250px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
     }
 
     #circle {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 200px;
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 2%;
         border-right: solid;
         border-color: var(--white);
-        padding-right: 50px;
+        padding-right: 4%;
+        float: left;
+        display: block;
     }
 
     #contact {
-        float: right;
-        margin-top: 50px;
-        margin-right: 800px;
         font-family:var(--font-center);
         color:var(--white);
-        font-size: 20px;
+        font-size: 1.5vw;
+        padding-left: 2%;
     }
 
-    #ort {
-        float: right;
-        margin-top: -230px;
-        margin-right: 517px;
+    .menu {
         font-family:var(--font-center);
         color:var(--white);
-        font-size: 20px;
+        font-size: 1vw;
+    }
+
+    .contactlist {
+        padding-top: 3%;
     }
 
     h5 {
         border-bottom-style: solid;
         border-color:var(--white);
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
+        display: block;
     }
 
     .fab fa-instagram {
@@ -197,17 +203,13 @@
     #instagram {
         color:var(--green);
         transition: 0.5s;
-        margin-left: 200px;
+        margin-left: 10%;
     }
 
     #instagram:hover {
         color:var(--white);
         transform: scale(1.1);
-
     }
-
-
-
 
 </style>
 <body>
@@ -219,7 +221,7 @@
         <li><a href="https://biobucs.vercel.app/biobucs_about.html">ABOUT</a></li>
     </ul>
 
-    <div style="background-image: url('huui.jpg'); background-repeat: repeat-x; max-width: 100%">
+    <div style="background-image: url('huui.jpg'); background-repeat: repeat-x; height: 60vw">
 
     <div class="circle">
         <div class="circle-txt"> 
@@ -230,21 +232,24 @@
 
     <p id="description"> BioBucs is an<span> ENVIRONMENTAL 
         SCIENCE RESEARCH & COMPETITIONS TEAM </span>that is focused on developing solutions to
-         make a tangible impact on our environment, society, and the world.
+        make a tangible impact on our environment, society, and the world.
     </p>
 
-    <h4> </h4>
+    <h4></h4>
 
     <footer> 
         
         <img id="circle" src="biobucscircle.png">
-        <p id="contact"> Contacts </p>
-        <p id="ort"> HHS STEM Program Director: <a href="mailto: jort@hoover.k12.al.us;"> Janet Ort </a></p>
 
-        <h5> </h5>
+        <p class="contactlist"> 
+            <h6 id="contact"> Contacts </h6>
+            <p class="menu"> HHS STEM Program Director: <a href="mailto: jort@hoover.k12.al.us;"> Janet Ort </a></p>
+        </p>
+
+        <h5></h5>
         
         <p><span id="instagram" style="display: inline-block;" 
-            class="fab fa-instagram-square fa-5x" aria-hidden="true" onclick="insta()"></span> </p>
+            class="fab fa-instagram-square fa-4x" aria-hidden="true" onclick="insta()"></span> </p>
 
     <script>
         function insta() {
@@ -252,9 +257,7 @@
         }
 
     </script>
-    </footer>
+    </footer>    
 
-
-    
 </body>
 </html>
