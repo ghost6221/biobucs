@@ -5,7 +5,7 @@
     <link rel="icon" href="biobucs.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
 </head>
 <style> 
@@ -14,6 +14,7 @@
         --green: #007f46;
         --white: #E7E7E7;
         --brown: #7f675b;
+        --lightgreen: #80c83a;
         --font-center: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
@@ -28,7 +29,7 @@
         padding-top: 2%;
         border-bottom: solid;
         border-color:#80c83a;
-        border-width: 20px;
+        border-width: 1.5vw;
         top: 0;
         background-color: var(--green);
         position: sticky;
@@ -74,8 +75,8 @@
 
     .circle {
         background-color:white;
-        width: 35vw;
-        height: 35vw;
+        width: 35%;
+        height: 20%;
         border-radius: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -127,10 +128,8 @@
         word-spacing: 10px;
         font-weight:bold;
         line-height: 2;
+        margin-top: 0px;
         background-color:var(--green);
-        margin-left: 5%;
-        margin-right: 5%;
-
     }
 
     span {
@@ -145,17 +144,19 @@
 
     footer {
         background-color: #7f675b;
-        margin-top: 100px;
         padding-bottom: 50px;
+        margin-top: 0px;
     }
 
     h4 {
-        border-bottom-style: solid;
+        border-bottom-style:dotted;
         border-color:var(--white);
         border-width: 5px;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-top: 5%;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: var(--green);
     }
 
     #circle {
@@ -219,9 +220,9 @@
         <li><a href="https://biobucs.vercel.app/biobucs_current.html">CURRENT PROJECTS</a></li>
         <li><a href="https://biobucs.vercel.app/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
         <li><a href="https://biobucs.vercel.app/biobucs_about.html">ABOUT</a></li>
-    </ul>
-
-    <div style="background-image: url('huui.jpg'); background-repeat: repeat-x; height: 60vw">
+    </ul>    
+    
+    <div style="background-image: url('huui.jpg'); background-repeat: repeat-x; width: 100%;">
 
     <div class="circle">
         <div class="circle-txt"> 
@@ -230,6 +231,7 @@
             <h3> HHS Environment </h3> </div>
     </div>
 
+    <p style="border-top: solid; border-color: var(--lightgreen); border-width: 2vw; margin-top: 0; margin-bottom: 0;"> </p>
     <p id="description"> BioBucs is an<span> ENVIRONMENTAL 
         SCIENCE RESEARCH & COMPETITIONS TEAM </span>that is focused on developing solutions to
         make a tangible impact on our environment, society, and the world.
