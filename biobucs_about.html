@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="biobucs.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
@@ -29,7 +30,8 @@
         background-color: rgb(112,128,144,0.5);
         border-bottom: solid;
         border-color:var(--green_blur);
-        border-width: 20px;
+        border-width: 1.5vw;
+        position: sticky;
     }
 
 
@@ -40,7 +42,7 @@
     li a {
         color:var(--white);
         text-decoration-color: rgb(112,128,144,0.1);
-        padding: 20px 80px;
+        padding: 1% 5%;
         transition: 0.5s;
         border-right: solid;
         border-left: solid;
@@ -68,12 +70,12 @@
     #main {
         background-color:var(--white);
         color:var(--brown);
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
         font-size: 50px;  
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-top: 50px;   
         font-family: var(--font);    
         text-align: center;
@@ -91,21 +93,190 @@
         color:var(--brown)
     }
 
+    .bold {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .heading {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .end {
+        font-size: 40px;
+    }
+
+    @media (max-width: 1190px) {
+        #circle {
+            display: none;
+        }
+
+        .menu, #contact {
+            padding-left: 20%;
+        }
+
+        li a {
+            border: 0;
+            padding-right: 3%;
+        }
+
+        .circle {
+            margin-bottom: 30%;
+        }
+
+        #main {
+            margin-top: 20%;
+        }
+
+        #navi {
+            padding-top: 6%;
+            padding-bottom: 6%;
+        }
+    }
+
+    h5 {
+        border-bottom-style: solid;
+        border-color:var(--white);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 100px;
+    }
+
+
+    /* footer */
+
+    footer {
+        background-color: #7f675b;
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    #circle {
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 2%;
+        border-right: solid;
+        border-color: var(--white);
+        padding-right: 4%;
+        float: left;
+        display: block;
+    }
+
+    #contact {
+        font-family:var(--font-center);
+        color:var(--white);
+        font-size: 15px;
+        padding-left: 2%;
+    }
+
+    .menu {
+        font-family:var(--font-center);
+        color:var(--white);
+        font-size: 15px;
+    }
+
+    .contactlist {
+        padding-top: 3%;
+    }
+
+    h5 {
+        border-bottom-style: solid;
+        border-color:var(--white);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20%;
+        display: block;
+    }
+
+    .fab fa-instagram {
+        color:var(--green);
+    }
+
+    #instagram {
+        color:var(--green);
+        transition: 0.5s;
+        margin-left: 10%;
+    }
+
+    #instagram:hover {
+        color:var(--white);
+        transform: scale(1.1);
+    }
+
+    /* footer */
+
+    @media (max-width: 1190px) {
+        #circle {
+            display: none;
+        }
+
+        .menu, #contact {
+            padding-left: 20%;
+        }
+
+        li a {
+            border: 0;
+            padding-right: 3%;
+        }
+
+        .circle {
+            margin-bottom: 30%;
+        }
+
+        #main {
+            margin-top: 20%;
+        }
+
+        #navi {
+            padding-top: 6%;
+            padding-bottom: 6%;
+        }
+    }
+
+
+
 </style>
 <body>
 
-    <div style="background-image: url('leaves.png'); background-repeat: no-repeat; background-size: 100%;">
+    <div style="background-image: url('leaves.png'); background-repeat: repeat-y; background-size: 100%;">
         <ul id="navi">
-        <li><a href="https://biobucs.vercel.app/">HOME</a></li>
-        <li><a href="https://biobucs.vercel.app/biobucs_current.html">CURRENT PROJECTS</a></li>
-        <li><a href="https://biobucs.vercel.app/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
-        <li><a href="https://biobucs.vercel.app/biobucs_about.html">ABOUT</a></li>
-    </ul>
+            <li><a href="http://127.0.0.1:5500/biobucs_mainpage.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_current.html">CURRENT PROJECTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_about.html">ABOUT</a></li>
+        </ul>
 
     <p id="main"> <b id="title"> Our Mission </b> <br><br>
-            <i id="maintext"> </i>  
+            <i id="maintext"> We are students who are trying to solve regional and national problems dealing with the environment. Alabama ranks 5th in the US for biodiversity, but continues to have one of the most lax environmental regulations in the nation. <br><br><span class="heading">We, the Biobucs Team, seek to,</span><br><br><span class="list"><span class="bold"> empower</span> students with leadership and research skills,
+            <br><span class="bold"> establish</span> partnerships with organizations in order to foster sustainbility in habitats, and <br><span class="bold"> inform</span> the community of the important discoveries and innovations
+            we make. </span><br><br><br> <span class="end">Together, we build a <span style="font-weight: bold;"> better</span> world. </i></span>
+            <br><br><br><br>
 
+            <h5></h5>
     </div>
 
+    <footer> 
+        
+        <img id="circle" src="biobucscircle.png">
+
+        <p class="contactlist"> 
+            <h6 id="contact"> Contacts </h6>
+            <p class="menu"> HHS STEM Program Director: <a href="mailto: jort@hoover.k12.al.us;"> Janet Ort </a></p>
+        </p>
+
+        <h5></h5>
+        
+        <p><span id="instagram" style="display: inline-block;" 
+            class="fab fa-instagram-square fa-4x" aria-hidden="true" onclick="insta()"></span> </p>
+
+    <script>
+        function insta() {
+            window.open('https://www.instagram.com/hhsbiobucs/');
+        }
+
+    </script>
+    </footer>
 </body>
 </html>
