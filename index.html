@@ -28,10 +28,9 @@
         padding-bottom: 2%;
         padding-top: 2%;
         border-bottom: solid;
-        border-color:#80c83a;
+        border-color: var(--lightgreen);
         border-width: 1.5vw;
         background-color: var(--green);
-        position: sticky;
     }
 
     li {
@@ -45,7 +44,6 @@
         transition: 0.5s;
         border-right: solid;
         border-left: solid;
-
     }
 
     li a:hover {
@@ -74,7 +72,7 @@
 
     .circle {
         background-color:white;
-        width: 40vw;
+        width: 35vw;
         height: 20%;
         border-radius: 50%;
         margin-left: auto;
@@ -134,13 +132,7 @@
 
     span {
         font-style: italic;
-    }
-
-    .hhs {
-        width: 20%;
-        float: right;
-        display: block;
-    }
+    }   
 
     footer {
         background-color:var(--brown);
@@ -176,6 +168,26 @@
         color:var(--white);
         font-size: 15px;
         padding-left: 2%;
+    }
+
+    @media (max-width: 1190px) {
+        #circle {
+            display: none;
+        }
+
+        .menu, #contact {
+            padding-left: 20%;
+        }
+
+        li a {
+            border: 0;
+            padding-right: 3%;
+        }
+
+        .circle {
+            margin-bottom: 30%;
+            
+        }
     }
 
     .menu {
@@ -216,12 +228,15 @@
 <body>
 
     <ul id="navi">
-        <li><a href="https://biobucs.vercel.app/">HOME</a></li>
-        <li><a href="https://biobucs.vercel.app/biobucs_current.html">CURRENT PROJECTS</a></li>
-        <li><a href="https://biobucs.vercel.app/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
-        <li><a href="https://biobucs.vercel.app/biobucs_about.html">ABOUT</a></li>
+        <li><a href="http://127.0.0.1:5500/biobucs_mainpage.html">HOME</a></li>
+        <li><a href="http://127.0.0.1:5500/biobucs_current.html">CURRENT PROJECTS</a></li>
+        <li><a href="http://127.0.0.1:5500/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
+        <li><a href="http://127.0.0.1:5500/biobucs_about.html">ABOUT</a></li>
     </ul>    
     
+    <!-- 
+        https://biobucs.vercel.app/
+    -->
     <div style="background-image: url('huui.jpg'); background-repeat: repeat-x; width: 100%;">
 
     <div class="circle">
