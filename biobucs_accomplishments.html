@@ -31,7 +31,8 @@
         background-color: rgb(112,128,144,0.5);
         border-bottom: solid;
         border-color:var(--green_blur);
-        border-width: 20px;
+        border-width: 1.5vw;
+        position: sticky;
     }
 
 
@@ -42,10 +43,10 @@
     li a {
         color:var(--white);
         text-decoration-color: rgb(112,128,144,0.1);
-        padding: 20px 80px;
+        padding: 1% 5%;
         transition: 0.5s;
         border-right: solid;
-        border-left: solid;
+        border-left: solid;;
     }
 
     li a:hover {
@@ -67,26 +68,18 @@
         background-color:  #7f675b;
     }
 
-    h5 {
-        border-bottom-style: solid;
-        border-color:var(--white);
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 100px;
-    }
-
     h1 {
         font-family: var(--font);
         color:var(--green);
         text-align: center;
         font-size: 70px;
-        margin-top: 5%;
-        margin-right: 25%;
-        margin-left: 25%;       
+        margin-top: 100px;
+        margin-right: 15%;
+        margin-left: 15%;       
         background-color:var(--white);
         border-radius: 40px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-bottom: solid;
         border-width: 5px;
         border-color:var(--green);
@@ -102,18 +95,19 @@
     #solar {
         color: var(--brown);
         margin-left: 40%;
+        margin-bottom: 5%;
     }
 
     #main {
-        background-color:white;
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 400px;
+        background-color:var(--white);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
         font-size: 50px;  
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-top: 50px;   
-        font-family: var(--font);    
+        font-family: var(--font);     
     }
 
     #title {
@@ -148,6 +142,8 @@
         list-style-type: circle;
     }
 
+    /* footer */
+
     footer {
         background-color: #7f675b;
         margin-top: 100px;
@@ -155,38 +151,32 @@
     }
 
     #circle {
-        width: 300px;
-        margin-top: 40px;
-        margin-left: 200px;
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 2%;
         border-right: solid;
         border-color: var(--white);
-        padding-right: 50px;
+        padding-right: 4%;
+        float: left;
+        display: block;
     }
 
     #contact {
-        float: right;
-        margin-top: 50px;
-        margin-right: 800px;
         font-family:var(--font-center);
         color:var(--white);
-        font-size: 20px;
+        font-size: 15px;
+        padding-left: 2%;
     }
 
-    #ort {
-        float: right;
-        margin-top: -230px;
-        margin-right: 517px;
+    .menu {
         font-family:var(--font-center);
         color:var(--white);
-        font-size: 20px;
+        font-size: 15px;
     }
 
-    h5 {
-        border-bottom-style: solid;
-        border-color:var(--white);
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 100px;
+    .contactlist {
+        padding-top: 3%;
     }
 
     .fab fa-instagram {
@@ -196,7 +186,7 @@
     #instagram {
         color:var(--green);
         transition: 0.5s;
-        margin-left: 200px;
+        margin-left: 10%;
     }
 
     #instagram:hover {
@@ -204,29 +194,77 @@
         transform: scale(1.1);
     }
 
+    /* footer */
+
+
+    .bold {
+        font-weight: bold;
+    }
+
+    @media (max-width: 1190px) {
+        #circle {
+            display: none;
+        }
+
+        .menu, #contact {
+            padding-left: 20%;
+        }
+
+        li a {
+            border: 0;
+            padding-right: 3%;
+        }
+
+        .circle {
+            margin-bottom: 30%;
+        }
+
+        #main {
+            margin-top: 60%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        h1 { 
+            font-size: 210%
+        }
+    }
+
+
+    h5 {
+        border-bottom-style: solid;
+        border-color:var(--white);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20%;
+        display: block;
+    }
+
 </style>
 <body>
 
     <div style="background-image: url('panel-3286741.jpg'); background-repeat: no-repeat; background-size: 100%;">
         <ul id="navi">
-            <li><a href="https://biobucs.vercel.app/">HOME</a></li>
-            <li><a href="https://biobucs.vercel.app/biobucs_current.html">CURRENT PROJECTS</a></li>
-            <li><a href="https://biobucs.vercel.app/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
-            <li><a href="https://biobucs.vercel.app/biobucs_about.html">ABOUT</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_mainpage.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_current.html">CURRENT PROJECTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_about.html">ABOUT</a></li>
         </ul>
-        <h1> Past Accomplishments </h1>
+        <h1> Accomplishments </h1>
 
-        <p id="main"> <b id="title"> Our Achievements </b> <br><br>
+        <p id="main"> <b id="title"> Our Feats </b> <br><br>
             <d id="quote"> <i id="quoteimg" class="fas fa-quote-left"></i> Preserve and cherish the pale blue dot, the only home we’ve ever known.
                 <i id="quoteimg" class="fas fa-quote-right"></i><br> — Carl Sagan</span></d>
-                <br><br> <i id="maintext"> Our team has won the following awards: <br> 
+                <br><br> <i id="maintext">
                     
-                    <i id="awards">Certificate of Recognition from Hoover City Schools</i><br> 
-                    <i id="awards">2019 - Taking the Pulse of the Planet Award (NOAA Recognition)</i><br> 
-                    <i id="awards">2018-2019, 2019-2020 - Regional and National Champions of the Lexus Eco Challenge</i><br>
-                    <i id="awards">2018-2019 - Best School Environmental Project </i><br>
                     <i id="solar" class="fas fa-solar-panel fa-5x"></i><br>
+
+                    <i id="awards">Certificate of Recognition from Hoover City Schools</i><br> 
+                    <i id="awards"><span class="bold">2019 - </span> Taking the Pulse of the Planet Award (NOAA Recognition)</i><br> 
+                    <i id="awards"><span class="bold">2018-2019, 2019-2020 -</span> Regional and National Champions of the Lexus Eco Challenge</i><br>
+                    <i id="awards"><span class="bold">2018-2019 - </span>Best School Environmental Project </i><br><br><br>
         </p>
+        <h5></h5>
 
     </div>
 
@@ -234,11 +272,13 @@
     <footer> 
         
         <img id="circle" src="biobucscircle.png">
-        <p id="contact"> Contacts </p>
-        <p id="ort"> HHS STEM Program Director: <a href="mailto: jort@hoover.k12.al.us;"> Janet Ort </a></p>
+        <p class="contactlist"> 
+            <h6 id="contact"> Contacts </h6>
+            <p class="menu"> HHS STEM Program Director: <a href="mailto: jort@hoover.k12.al.us;"> Janet Ort </a></p>
+        </p>
 
-        <h5> </h5>
-        
+        <h5></h5>
+
         <p><span id="instagram" style="display: inline-block;" 
             class="fab fa-instagram-square fa-5x" aria-hidden="true" onclick="insta()"></span> </p>
 
