@@ -223,21 +223,6 @@
         display: block;
     }
 
-    .fab fa-instagram {
-        color:var(--green);
-    }
-
-    #instagram {
-        color:var(--green);
-        transition: 0.5s;
-        margin-left: 10%;
-    }
-
-    #instagram:hover {
-        color:var(--white);
-        transform: scale(1.1);
-    }
-
     #creator {
         font-style: italic;
         font-size: 20px;
@@ -259,26 +244,68 @@
         font-style: normal;
     }
 
+    .fab fa-instagram {
+        color:var(--green);
+    }
+
+    #instagram {
+        color:var(--green);
+        transition: 0.5s;
+        margin-left: 10%;
+    }
+
+    #instagram:hover {
+        color:var(--white);
+        transform: scale(1.1);
+    }
+
+    #pond {
+        padding-top: 2%;
+    }
+
+    #link {
+        color: black;
+
+    }
+
+    #link:hover {
+        text-decoration-color:var(--green);
+    }
+
 </style>
 <body>
 
 
     <div style="background-image: url('pollution.png'); background-repeat: no-repeat; background-size: 100%; background-attachment: fixed;">
         <ul id="navi">
-            <li><a href="https://biobucs.vercel.app/">HOME</a></li>
-            <li><a href="https://biobucs.vercel.app/biobucs_current.html">CURRENT PROJECTS</a></li>
-            <li><a href="https://biobucs.vercel.app/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
-            <li><a href="https://biobucs.vercel.app/biobucs_about.html">ABOUT</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_mainpage.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_current.html">CURRENT PROJECTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_accomplishments.html">ACCOMPLISHMENTS</a></li>
+            <li><a href="http://127.0.0.1:5500/biobucs_about.html">ABOUT</a></li>
         </ul>
         <h1> Current Projects </h1>
 
         <p id="main"> <b id="title"> Ongoing Intiatives </b> <br><br>
             <d id="quote"> <i id="quoteimg" class="fas fa-quote-left"></i> Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it is the only thing that ever has.
                 <i id="quoteimg" class="fas fa-quote-right"></i><br> — Margaret Mead</span></d>
-                    <br><br> <i id="maintext"> <i id="title2"> Air Pollution Project </i> <br>
-                        <i id="creator"> By Shayann Essani  </i> </i>
-                    <br><br> <i id="maintext"> <i id="title2"> Cahaba River Project </i> <br>
-                        <i id="creator"> By Srijan and Sree  </i> </i><br><br>
+                    <br><br> <i id="maintext"> <i id="title2"> Outdoor Classroom Project </i> <br>
+                        <i id="creator"></i> Weather Stations and Cardinal Direction Signs led by Abby Gobbels <br> <b>Complete <a id="link" href="//www2.ed.gov/programs/green-ribbon-schools/highlights-2022.pdf">checklist</a></b></br></i>
+                        <img id="pond" src="frogpond.png">
+                    <br><br> <i id="maintext"> <i id="title2"> U.S. Department of Education Green Ribbon Schools Intiative </i> <br>
+                        <i id="creator"></i> We plan to add Hoover High School as a recognized Green Ribbon School by: <br>
+                            <b> Pillar One: </b> reducing environmental impacts, such as waste, water, energy,
+                        greenhouse gases, and transportation, encompassing the areas of school
+                        facilities, grounds, and operations; <br>
+                            <b> Pillar Two: </b> improving health and wellness by promoting a healthy physical
+                        environment (including aspects such as air quality, contaminant control, moisture
+                        control, daylighting, pest management, and acoustical and thermal comfort) and
+                        student and staff wellness practices (such as healthy school food and outdoor
+                        physical activity); and <br>
+                            <b> Pillar Three: </b> offering effective environmental and sustainability education,
+                        including civic learning, green careers, and STEM connections. <br>
+                        <b> More info <a id="link" href="//www2.ed.gov/programs/green-ribbon-schools/highlights-2022.pdf">here</a>
+                            </b>
+                         </i><br><br>
 
                         <h5></h5>
 
@@ -304,7 +331,6 @@
         }
 
     </script>
-    </footer>    
-
+    </footer>
 </body>
 </html>
